@@ -1,0 +1,123 @@
+body {
+  font-family: 'Average', serif;
+  font-size: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #ddd;
+  z-index: 1;
+}
+
+img {
+  margin: 0px 30px;
+}
+
+nav {
+  width: 960px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav ul {
+  margin: 20px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+
+#logo {
+  max-height: 30px;
+  float: left;
+}
+
+#intro {
+  background-color: #fff;
+  background-size: cover;
+  color: #000;
+}
+
+#schedule {
+  background-color: #eee;
+  background-size: cover;
+  color: #000;
+}
+
+#register {
+  background-color: #ddd;
+  background-size: cover;
+  color: #000;
+}
+
+#history {
+  background-color: #bbb;
+  background-size: cover;
+  color: #000;
+}
+
+#contact {
+  background-color: #aaa;
+  background-size: cover;
+  color: #000;
+}
+
+.two-col {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+a {
+   color: #000;
+}
+
+.active { 
+  color: #2dbccb;
+}
+
+header {
+  display: none;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  section {
+    padding: 12rem 0 11rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  section {
+    padding: 14rem 0 15rem;
+  }
+  header {
+    display: inline-block;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  section {
+    padding: 20rem 0rem 19rem;
+  }
+  header {
+    display: inline-block;
+  }
+}
