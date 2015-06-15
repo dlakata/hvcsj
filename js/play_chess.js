@@ -16,6 +16,11 @@ var makeRandomMove = function() {
   window.setTimeout(makeRandomMove, 500);
 };
 
-board = new ChessBoard('board', 'start');
+var cfg = {
+  showNotation: false,
+  position: 'start'
+};
+
+board = new ChessBoard('board', cfg);
 
 window.setTimeout(makeRandomMove, 500);
