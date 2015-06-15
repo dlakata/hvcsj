@@ -9,15 +9,18 @@
 	    <link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="css/normalize.css">
 	    <link rel="stylesheet" href="css/skeleton.css">
-	    <link rel="stylesheet" href="css/custom.css">
+	    <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/chessboard-0.3.0.min.css"/>
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/chess.js"></script>
+      <script type="text/javascript" src="js/chessboard-0.3.0.min.js"></script>
       <script type="text/javascript" src="js/custom.js" ></script>
-	    <link rel="icon" type="image/png" href="images/favicon.png">
+	    <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
     <body>
       <header>
         <nav>
-          <a href="#intro"><img id="logo" src="images/king.png"></a>
+          <a href="#intro"><img id="logo" src="img/king.png"></a>
           <ul>
             <li><a class="active" href="#intro">HVCSJ</a></li>
             <li><a href="#schedule">Schedule</a></li>
@@ -31,8 +34,11 @@
       <section id="intro">
         <div class="container">
           <div class="row">
-            <h1>HVCSJ</h1>
-            <h3>The country's oldest, continuously-operated, scholastic chess club.</h3>
+            <div id="intro-desc">
+              <h1>HVCSJ</h1>
+              <h3>The country's oldest, continuously-operated, scholastic chess club.</h3>
+            </div>
+            <div id="board" style="width: 400px"></div>
           </div>
         </div>
       </section>
@@ -79,5 +85,6 @@
           </div>
         </div>
       </section>
+      <script type="text/javascript" src="js/play_chess.js"></script>
     </body>
 </html>
