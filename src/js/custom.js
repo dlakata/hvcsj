@@ -26,7 +26,7 @@ function onScroll(event){
     $('nav a').each(function () {
         var currentLink = $(this);
         var refElement = $(currentLink.attr('href'));
-        if (refElement.position().top <= scrollPosition) {
+        if (refElement.position().top <= scrollPosition + 40) {
             $('nav ul li a').removeClass('active');
             currentLink.addClass('active');
         }

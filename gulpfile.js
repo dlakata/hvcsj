@@ -19,7 +19,13 @@ gulp.task('css', function() {
         'src/css/main.css'])
         .pipe(minifyCSS())
         .pipe(concat('style.min.css'))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('css'));
+    gulp.src(['src/css/normalize.css',
+        'src/css/skeleton.css',
+        'src/css/tournament.css'])
+        .pipe(minifyCSS())
+        .pipe(concat('tournament.min.css'))
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('js', function() {
