@@ -1,0 +1,166 @@
+@tablet-size: 750px;
+@header-size: 60px;
+
+body {
+  font-family: 'Vollkorn', serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: @header-size;
+  background: #fff;
+  z-index: 1;
+  display: none;
+  img {
+    margin: 0px 30px;
+  }
+  margin: 0 auto;
+  background-color: #CDC08C;
+}
+
+nav {
+  max-width: @tablet-size;
+  height: @header-size;
+  margin: 0 auto;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  ul {
+    margin: 10px 0 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 30px 0 0;
+  }
+}
+
+section {
+  background-size: cover;
+  color: #000;
+  padding: 4rem 0rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #E4E4E4;
+}
+
+#board {
+  width: 300px;
+  margin: 20px auto;
+}
+
+#logo {
+  max-height: 30px;
+  float: left;
+}
+
+#title-text {
+  color: #E4E4E4;
+}
+
+#schedule-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.button {
+  margin: 20px auto;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 17px;
+}
+
+#add-calendar {
+  width: 250px;
+}
+
+#intro {
+  background: url('../img/intro-bg.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#schedule {
+  background-color: #eee;
+  text-align: center;
+}
+
+#dates {
+  padding-top: 2rem;
+}
+
+#register {
+  background-color: #ddd;
+}
+
+#history {
+  background-color: #eee;
+}
+
+#contact {
+  background-color: #ddd;
+  padding-bottom: 0rem;
+  text-align: center;
+}
+
+.active { 
+  color: #E4E4E4;
+}
+
+.section-title {
+  img {
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    padding: 30px;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: @tablet-size) {
+  #intro {
+    padding: 18rem 0rem;
+  }
+  #schedule-text {
+    width: 70%;
+  }
+  header {
+    display: block;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  #intro {
+    padding: 30rem 0rem;
+  }
+  header {
+    display: block;
+  }
+}
