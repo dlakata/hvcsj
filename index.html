@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/page.js"></script>
@@ -17,7 +17,7 @@
       <nav>
         <a href="#intro"><img id="logo" src="img/king.png"></a>
         <ul>
-          <li><a class="active" href="#intro">HVCSJ</a></li>
+          <li><a href="#intro">HVCSJ</a></li>
           <li><a href="#schedule">Schedule</a></li>
           <li><a href="#register">Register</a></li>
           <li><a href="#history">History</a></li>
@@ -29,9 +29,10 @@
     <section id="intro">
       <div class="container">
         <div class="row">
-          <h1>Huntingdon Valley Chess Society Juniors</h1>
-          <h4>The country's oldest, continuously-operated, scholastic chess club.</h4>
-          <div id="board"></div>
+          <div id="title-text" class="six columns">
+            <h1>Huntingdon Valley Chess Society Juniors</h1>
+            <h4>The country's oldest, continuously-operated, scholastic chess club.</h4>
+          </div>
         </div>
       </div>
     </section>
@@ -39,10 +40,30 @@
     <section id="schedule">
       <div class="container">
         <div class="row">
-          <div class="one-half">
-            <h2>We meet on Tuesdays from 7:30pm to 8:30pm in the Community Room of the <a target="_blank" href="https://www.google.com/maps/place/Huntingdon+Valley+Library">Huntingdon Valley Library</a>.</h2>
-            <h4>Here's our calendar for the 2014-2015 school year:</h4>
-            <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=lvoemjj4pje7e3d4rccohjsef8%40group.calendar.google.com&amp;color=%236B3304&amp;ctz=America%2FNew_York" style=" border-width:0 " width="400" height="300" frameborder="0" scrolling="no"></iframe>
+          <div class="section-title">
+            <img src="img/queen.png">
+            <h3>Schedule</h3>
+          </div>
+          We meet on most Tuesdays from 7:30pm to 8:30pm in the Community Room of the <a target="_blank" href="https://www.google.com/maps/place/Huntingdon+Valley+Library">Huntingdon Valley Library</a>. You can <a target="_blank" href="https://www.google.com/calendar/embed?src=lvoemjj4pje7e3d4rccohjsef8%40group.calendar.google.com&ctz=America/New_York">add our Google Calendar</a> to your personal calendar, or refer to the following dates.
+          <div id="dates">
+            <div class="six columns">
+              October 21, 2014 <br>
+              October 28, 2014 <br>
+              November 4, 2014 <br>
+              November 18, 2014 <br>
+              December 2, 2014 <br>
+              January 20, 2015 <br>
+              January 27, 2015 <br>
+            </div>
+            <div class="six columns">
+              February 3, 2015 <br>
+              February 17, 2015<br>
+              February 24, 2015 <br>
+              March 3, 2015<br>
+              March 17, 2015<br>
+              March 24, 2015<br>
+              March 31, 2015<br>
+            </div>
           </div>
         </div>
       </div>
@@ -51,20 +72,31 @@
     <section id="register">
       <div class="container">
         <div class="row">
-          <div class="six columns">
-            <h4><a target="_blank" href="http://goo.gl/forms/pxo9oIxKZo">Register</a></h4>
-            <ul>
-              <li>US Chess Federation Membership (one year)</li>
-              <li>PA State Chess Federation membership (one year) if necessary</li>
-              <li>Entry fee to at least two local USCF-sponsored tournaments</li>
-              <li>Team T-shirt</li>
-              <li>Participation award</li>
-            </ul>
+          <div class="section-title">
+            <img src="img/knight.png">
+            <h3>Registration</h3>
           </div>
-          <div class="six columns">
-            <h3>
-            Fill out <a target="_blank" href="http://goo.gl/forms/qSSarXxC8U">this form</a> to play at our annual Philadelpia Metropolitan tournament.
-            You can read more about the tournament <a target="_blank" href="static/2014 Meadowbrook Chess Tournament.pdf">here</a>.</h3>
+          <div>
+            <div class="six columns">
+              <h4>Benefits of club membership</h4>
+              <ul>
+                <li>US Chess Federation Membership (one year)</li>
+                <li>PA State Chess Federation membership (one year) if necessary</li>
+                <li>Entry fee to at least two local USCF-sponsored tournaments</li>
+                <li>Team T-shirt</li>
+                <li>Participation award</li>
+              </ul>
+              <a class="button" target="_blank" href="http://goo.gl/forms/pxo9oIxKZo">Register</a>
+            </div>
+            <div class="six columns">
+              <h4>9th Annual Philadelphia Metropolitan Grade/HS Chess Championship</h4>
+              <ul>
+                <li>Dozens of trophies, plus a $600-value prize for the top sophomore/junior</li>
+                <li>G/30, 5-round Swiss</li>
+                <li>Located at <a target="_blank" href="https://www.google.com/maps/place/The+Meadowbrook+School">The Meadowbrook School</a></li>
+              </ul>
+              <a class="button" href="tournament.html">Read more</a>
+            </div>
           </div>
         </div>
       </div>
@@ -73,7 +105,10 @@
     <section id="history">
       <div class="container">
         <div class="row">
-          <h3>History</h3>
+          <div class="section-title">
+            <img src="img/bishop.png">
+            <h3>History</h3>
+          </div>
         </div>
       </div>
     </section>
@@ -81,7 +116,13 @@
     <section id="contact">
       <div class="container">
         <div class="row">
-          <h3>For more information, contact Robert Lakata at <a target="_blank" href="mailto:chess@hvaa.net">chess@hvaa.net</a> or (215) 947-3485.</h3>
+          <div class="section-title">
+            <img src="img/rook.png">
+            <h3>Contact</h3>
+          </div>
+          <div id="board"></div>
+          For more information, contact Robert Lakata at <a target="_blank" href="mailto:chess@hvaa.net">chess@hvaa.net</a> or (215) 947-3485.
+          <h6>&copy; HVCSJ 2015</h6>
         </div>
       </div>
     </section>

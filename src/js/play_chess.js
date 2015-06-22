@@ -12,8 +12,6 @@ var makeRandomMove = function() {
   var randomIndex = Math.floor(Math.random() * possibleMoves.length);
   game.move(possibleMoves[randomIndex]);
   board.position(game.fen());
-
-  window.setTimeout(makeRandomMove, 500);
 };
 
 var cfg = {
@@ -23,4 +21,4 @@ var cfg = {
 
 board = new ChessBoard('board', cfg);
 
-window.setTimeout(makeRandomMove, 500);
+window.setInterval(makeRandomMove, 500);

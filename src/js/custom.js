@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(document).on('scroll', onScroll);
 
-    $('a[href^="#"]').on('click', function (e) {
+    $("a[href^='#']").on('click', function (e) {
         e.preventDefault();
         $(document).off('scroll');
 
@@ -11,7 +11,7 @@ $(document).ready(function () {
         $(this).addClass('active');
 
         var target = this.hash;
-        $target = $(target);
+        var $target = $(target);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top+2
         }, 500, 'swing', function () {
