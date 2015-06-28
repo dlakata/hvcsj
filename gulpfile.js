@@ -13,8 +13,9 @@ gulp.task('less', function() {
 });
 
 gulp.task('css', function() {
-    gulp.src(['src/css/normalize.css',
-        'src/css/skeleton.css',
+    gulp.src(['bower_components/skeleton/css/normalize.css',
+        'bower_components/skeleton/css/skeleton.css',
+        'bower_components/jquery-modal/jquery.modal.css',
         'src/css/chessboard-0.3.0.min.css',
         'src/css/main.css'])
         .pipe(minifyCSS())
@@ -29,7 +30,8 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
-    gulp.src(['src/js/chess.js',
+    gulp.src(['bower_components/jquery-modal/jquery.modal.js',
+        'src/js/chess.js',
         'src/js/chessboard-0.3.0.min.js',
         'src/js/custom.js'])
         .pipe(concat('page.js'))
