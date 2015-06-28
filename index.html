@@ -97,7 +97,7 @@
                 <li>Team T-shirt</li>
                 <li>Participation award</li>
               </ul>
-              <a class="button" target="_blank" href="http://goo.gl/forms/pxo9oIxKZo">Register</a>
+              <a class="button" id="membership-button" rel="modal:open" href="#membership-form">Register</a>
             </div>
             <div class="six columns">
               <h3>9th Annual Philadelphia Metropolitan Grade/HS Chess Championship</h3>
@@ -118,7 +118,7 @@
         <div class="row">
           <div class="section-title">
             <img alt="Bishop" src="img/bishop.png">
-            <h2>History</h2>
+            <h2>Important Dates in the History of the Club</h2>
             <table class="u-full-width">
               <thead>
                 <tr>
@@ -149,7 +149,7 @@
                 </tr>
                 <tr>
                   <td>1997</td>
-                  <td>Bruce Fenderson becomes club's director; the club begins meeting in Huntingdon Valley Library's new location</td>
+                  <td>Bruce Fenderson becomes club's director; the club begins meeting in the Huntingdon Valley Library's new location</td>
                 </tr>
                 <tr>
                   <td>1998</td>
@@ -183,6 +183,24 @@
         </div>
       </div>
     </section>
+
+    <div id="membership-form">
+      <h4>Register</h4>
+      To register, please fill out <a target="_blank" href="http://goo.gl/forms/pxo9oIxKZo">this Google form</a>. To pay, you can bring a $75.00 check &mdash; made out to Huntingdon Valley Chess Society Juniors (HVCSJ) &mdash; to one of our meetings. Alternatively, you can pay $78.00 via PayPal with the below form. <br> <br>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="Q7MW2HLMREZGN">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Payment">Payment</td></tr><tr><td><select name="os0">
+            <option value="HVCSJ membership">HVCSJ membership $78.00 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Player's name">Player's name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="currency_code" value="USD">
+        <input id="paypal-button" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
     <script type="text/javascript" src="js/play_chess.js"></script>
   </body>
 </html>

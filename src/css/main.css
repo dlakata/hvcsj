@@ -119,6 +119,19 @@ a:hover {
   display: block;
   padding: 30px;
 }
+#membership-form {
+  display: none;
+  font-size: 16px;
+  width: 300px;
+}
+#membership-form #paypal-button {
+  margin: 0 auto;
+  display: block;
+}
+#membership-form td {
+  border-bottom: none;
+  padding: 0px;
+}
 /* Bigger than 750 */
 @media (min-width: 750px) {
   #intro {
