@@ -19,6 +19,22 @@ $(document).ready(function () {
             $(document).on('scroll', onScroll);
         });
     });
+
+    $('#membership-button').on('click', function() {
+        var animationDelay = 100;
+        var $membershipForm = $('#membership-form');
+        var $registrationBenefits = $('#registration-benefits');
+        var $membershipButton = $('#membership-button');
+        if ($membershipForm.is(':visible')) {
+            $membershipForm.hide(animationDelay);
+            $registrationBenefits.show(animationDelay);
+            $membershipButton.text('Register');
+        } else {
+            $membershipForm.show(animationDelay);
+            $registrationBenefits.hide(animationDelay);
+            $membershipButton.text('Benefits');
+        }
+    });
 });
  
 function onScroll(event){
