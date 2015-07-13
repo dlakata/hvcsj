@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>HVCSJ: Huntingdon Valley Chess Society Juniors</title>
     <meta name="description" content="The official website of the Huntingdon Valley Chess Society Juniors, the country's oldest, continuously-operated, community-based, USCF-affiliated, scholastic chess club.">
-    <meta name="author" content="David Lakata">
+    <meta name="author" content="David Lakata; Huntingdon Valley Chess Society Juniors">
     <meta name="theme-color" content="#CDC08C">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-    <link rel="alternate" href="dlakata.github.io/hvcsj" hreflang="en-us" />
+    <link rel="alternate" href="hvcsj.org" hreflang="en-us" />
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/page.js"></script>
@@ -55,7 +55,11 @@
             <img alt="Queen" src="img/queen.png">
             <h2>Schedule</h2>
           </div>
-          <div id="schedule-text">We meet on most Tuesdays from 7:30pm to 8:30pm in the Community Room of the <a target="_blank" href="https://www.google.com/maps/place/Huntingdon+Valley+Library">Huntingdon Valley Library</a>.</div>
+          <div id="schedule-text">
+            We meet on most Tuesdays from 7:30pm to 8:30pm
+            in the Community Room of the <a target="_blank" href="https://www.google.com/maps/place/Huntingdon+Valley+Library">Huntingdon Valley Library</a>
+            (625 Red Lion Road, Huntingdon Valley, PA 19006).
+          </div>
           <div id="dates">
             <div class="six columns">
               October 20, 2015 <br>
@@ -74,6 +78,7 @@
             </div>
           </div>
           <div class="twelve columns">
+            There will be one more meeting after the State Championship (date to be determined in 2016).
             <a id="view-calendar" class="button" target="_blank" href="https://www.google.com/calendar/embed?src=lvoemjj4pje7e3d4rccohjsef8%40group.calendar.google.com&amp;ctz=America/New_York">View our Google Calendar</a>
           </div>
         </div>
@@ -89,20 +94,49 @@
           </div>
           <div>
             <div class="six columns">
-              <h3>Benefits of club membership</h3>
-              <ul>
-                <li>US Chess Federation Membership (one year)</li>
-                <li>PA State Chess Federation membership (one year) if necessary</li>
-                <li>Entry fee to at least two local USCF-sponsored tournaments</li>
-                <li>Team T-shirt</li>
-                <li>Participation award</li>
-              </ul>
-              <a class="button" id="membership-button" rel="modal:open" href="#membership-form">Register</a>
+              <div id="registration-benefits">
+                <h3>Benefits of club membership</h3>
+                <ul>
+                  <li>US Chess Federation Membership (one year)</li>
+                  <li>PA State Chess Federation membership (one year) if necessary</li>
+                  <li>Entry fee to at least two local USCF-sponsored tournaments</li>
+                  <li>Team T-shirt</li>
+                  <li>Participation award</li>
+                </ul>
+              </div>
+              <div id="membership-form">
+                <h4>Register</h4>
+                To register, please fill out <a target="_blank" href="http://goo.gl/forms/pxo9oIxKZo">this Google form</a>. To pay, you can bring a $75.00 check &mdash; made out to Huntingdon Valley Chess Society Juniors (HVCSJ) &mdash; to one of our meetings. Alternatively, you can pay $78.00 via PayPal with the below form. <br> <br>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="Q7MW2HLMREZGN">
+                  <table>
+                    <tr>
+                      <td><input type="hidden" name="on0" value="Payment">Payment</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select name="os0">
+                          <option value="HVCSJ membership">HVCSJ membership $78.00 USD</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="hidden" name="on1" value="Player's name">Player's name</td>
+                    </tr>
+                    <tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+                  </table>
+                  <input type="hidden" name="currency_code" value="USD">
+                  <input id="paypal-button" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+              </div>
+              <a class="button" id="membership-button">Register</a>
             </div>
             <div class="six columns">
               <h3>9th Annual Philadelphia Metropolitan Grade/HS Chess Championship</h3>
               <ul>
-                <li>Dozens of trophies, plus a $600-value prize for the top sophomore/junior</li>
+                <li>Dozens of trophies, plus a $650-value prize for the top sophomore/junior</li>
                 <li>G/30, 5-round Swiss</li>
                 <li>Located at <a target="_blank" href="https://www.google.com/maps/place/The+Meadowbrook+School">The Meadowbrook School</a></li>
               </ul>
@@ -184,23 +218,6 @@
       </div>
     </section>
 
-    <div id="membership-form">
-      <h4>Register</h4>
-      To register, please fill out <a target="_blank" href="http://goo.gl/forms/pxo9oIxKZo">this Google form</a>. To pay, you can bring a $75.00 check &mdash; made out to Huntingdon Valley Chess Society Juniors (HVCSJ) &mdash; to one of our meetings. Alternatively, you can pay $78.00 via PayPal with the below form. <br> <br>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="Q7MW2HLMREZGN">
-        <table>
-        <tr><td><input type="hidden" name="on0" value="Payment">Payment</td></tr><tr><td><select name="os0">
-            <option value="HVCSJ membership">HVCSJ membership $78.00 USD</option>
-        </select> </td></tr>
-        <tr><td><input type="hidden" name="on1" value="Player's name">Player's name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-        </table>
-        <input type="hidden" name="currency_code" value="USD">
-        <input id="paypal-button" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-      </form>
-    </div>
     <script type="text/javascript" src="js/play_chess.js"></script>
   </body>
 </html>

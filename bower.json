@@ -18,7 +18,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery-modal": "~0.5.2",
     "skeleton": "~2.0.4"
   }
 }

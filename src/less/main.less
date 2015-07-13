@@ -15,22 +15,24 @@ header {
   z-index: 1;
   display: none;
   img {
-    margin: 0px 30px;
+    margin: 10px 0px;
   }
   margin: 0 auto;
   background-color: #CDC08C;
 }
 
 nav {
-  max-width: @tablet-size;
   height: @header-size;
   margin: 0 auto;
+  display: table;
   a {
     text-transform: uppercase;
     text-decoration: none;
   }
   ul {
     margin: 10px 0 0;
+    padding-left: 30px;
+    display: inline-block;
   }
   li {
     display: inline-block;
@@ -113,6 +115,7 @@ a:hover {
 
 #dates {
   padding-top: 2rem;
+  padding-bottom: 21rem;
 }
 
 #register {
@@ -145,7 +148,6 @@ a:hover {
 #membership-form {
   display: none;
   font-size: 16px;
-  width: 300px;
 
   #paypal-button {
     margin: 0 auto;

@@ -1,19 +1,100 @@
-body {
-  font-family: 'Vollkorn', serif;
-  font-size: 20px;
-  font-weight: lighter;
+@import 'main.less';
+
+header > a {
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 30px;
+    margin-top: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
+h6 {
+  margin: 5px;
 }
 
-h1 {
-    margin: 20px auto;
+#scholarship-reqs {
+  font-size: 12px;
 }
 
-.button {
+#logo {
+    position: absolute;
+    left: 110px;
+    margin: 0px;
+}
+
+#logistics {
+  background-color: #ddd;
+  ul {
+    list-style: none;
     margin: 0 auto;
     display: block;
-    width: 200px;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 10px 20px;
+    }
+  }
+  h5 {
+    padding-top: 20px;
+  }
+}
+
+#tournament-paypal {
+  font-size: 16px;
+  margin: 0 auto;
+  display: table;
+
+  select {
+    width: 300px;
+  }
+
+  #paypal-button {
+    margin: 0 auto;
+    display: block;
+  }
+
+  table {
+    margin: 0px;
+  }
+
+  td {
+    border-bottom: none;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+}
+
+#prizes {
+  background-color: #ccc;
+}
+
+#register {
+  background-color: #ddd;
+}
+
+#address {
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+
+/* Bigger than 750 */
+@media (min-width: @tablet-size) {
+  #main {
+    padding: 14rem 0rem;
+  }
+  header {
+    display: block;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  #main {
+    padding: 18rem 0rem;
+  }
+  header {
+    display: block;
+  }
 }
