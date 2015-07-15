@@ -78,7 +78,7 @@ a:hover {
 }
 .button {
   margin: 20px auto;
-  display: block;
+  display: table;
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 17px;
@@ -158,6 +158,10 @@ a:hover {
 }
 /* Bigger than 750 */
 @media (min-width: 750px) {
+  #title-text {
+    color: #E4E4E4;
+    width: 50%;
+  }
   .tabs-nav li {
     display: inline-block;
     margin: 0px 15px;
@@ -175,7 +179,7 @@ a:hover {
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   #intro {
-    padding: 30rem 0rem;
+    padding: 24rem 0rem;
   }
   header {
     display: block;
@@ -190,6 +194,23 @@ header > a {
 }
 h6 {
   margin: 5px;
+}
+#main-text {
+  padding: 5px;
+  background: rgba(200, 200, 200, 0.5);
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+#main-text a {
+  color: black;
+}
+#main {
+  height: 100%;
+  background: url('../img/tournament-bg.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #scholarship-reqs {
   font-size: 12px;
