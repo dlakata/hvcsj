@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>http://www.hvcsj.org</loc>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.hvcsj.org/static/2015-2016%20Flyer.pdf</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>http://www.hvcsj.org/tournament.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>http://www.hvcsj.org/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://www.hvcsj.org/static/2015%20Meadowbrook%20Tournament.pdf</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://www.hvcsj.org/static/HVCSJ_flyer.pdf</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+</urlset>
