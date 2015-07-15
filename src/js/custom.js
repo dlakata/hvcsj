@@ -19,9 +19,10 @@ $(document).ready(function () {
             $(document).on('scroll', onScroll);
         });
     });
+    
+    var animationDelay = 200;
 
     $('#membership-button').on('click', function() {
-        var animationDelay = 100;
         var $membershipForm = $('#membership-form');
         var $registrationBenefits = $('#registration-benefits');
         var $membershipButton = $('#membership-button');
@@ -35,6 +36,41 @@ $(document).ready(function () {
             $membershipButton.text('Benefits');
         }
     });
+
+    var $history = $('#history');
+    var $awards = $('#awards');
+    var $mission = $('#mission');
+
+    $history.show();
+    $('#history-tab').addClass('current');
+
+    $('#history-tab').on('click', function() {
+        $history.show(animationDelay);
+        $awards.hide(animationDelay);
+        $mission.hide(animationDelay);
+        $('#history-tab').addClass('current');
+        $('#awards-tab').removeClass('current');
+        $('#mission-tab').removeClass('current');
+    });
+
+    $('#awards-tab').on('click', function() {
+        $awards.show(animationDelay);
+        $history.hide(animationDelay);
+        $mission.hide(animationDelay);
+        $('#awards-tab').addClass('current');
+        $('#history-tab').removeClass('current');
+        $('#mission-tab').removeClass('current');
+    });
+
+    $('#mission-tab').on('click', function() {
+        $mission.show(animationDelay);
+        $awards.hide(animationDelay);
+        $history.hide(animationDelay);
+        $('#mission-tab').addClass('current');
+        $('#awards-tab').removeClass('current');
+        $('#history-tab').removeClass('current');
+    });
+
 });
  
 function onScroll(event){

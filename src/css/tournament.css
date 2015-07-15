@@ -32,7 +32,7 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  margin: 0 30px 0 0;
+  margin: 0px 15px;
 }
 section {
   background-size: cover;
@@ -105,7 +105,7 @@ a:hover {
 #register {
   background-color: #ddd;
 }
-#history {
+#about {
   background-color: #eee;
 }
 #contact {
@@ -115,6 +115,28 @@ a:hover {
 }
 .active {
   color: #E4E4E4;
+}
+.tabs-nav ul {
+  list-style: none;
+  display: table;
+  margin: 0 auto;
+}
+.tabs-nav li {
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+}
+.tabs-nav .current {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.tabs-content {
+  padding-top: 20px;
+}
+#history,
+#mission,
+#awards {
+  display: none;
 }
 .section-title img {
   height: 30px;
@@ -136,6 +158,10 @@ a:hover {
 }
 /* Bigger than 750 */
 @media (min-width: 750px) {
+  .tabs-nav li {
+    display: inline-block;
+    margin: 0px 15px;
+  }
   #intro {
     padding: 18rem 0rem;
   }
