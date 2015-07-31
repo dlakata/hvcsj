@@ -1,11 +1,12 @@
 @import 'main.less';
 
 header > a {
-    position: absolute;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-left: 30px;
-    margin-top: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 30px;
+  margin-top: 10px;
+  color: white;
 }
 
 h6 {
@@ -21,9 +22,9 @@ h6 {
 }
 
 #logo {
-    position: absolute;
-    left: 110px;
-    margin: 0px;
+  position: absolute;
+  left: 110px;
+  margin: 0px;
 }
 
 #logistics {
@@ -79,17 +80,16 @@ h6 {
   padding-bottom: 3rem;
 }
 
-
 /* Bigger than 750 */
 @media (min-width: @tablet-size) {
-  header {
-    display: block;
+  .intro {
+    padding: 14rem 0rem;
   }
 }
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
-  header {
-    display: block;
+  .intro {
+    padding: 18rem 0rem;
   }
 }

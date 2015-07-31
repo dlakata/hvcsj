@@ -7,23 +7,20 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
   z-index: 1;
-  display: none;
-  margin: 0 auto;
   background-color: #CDC08C;
 }
-header img {
-  margin: 10px 0px;
-}
 nav {
-  height: 60px;
   margin: 0 auto;
-  display: table;
+  display: none;
+  height: 60px;
 }
 nav a {
   text-transform: uppercase;
   text-decoration: none;
+}
+nav a:hover {
+  color: #E4E4E4;
 }
 nav ul {
   margin: 10px 0 0;
@@ -33,6 +30,16 @@ nav ul {
 nav li {
   display: inline-block;
   margin: 0px 15px;
+}
+#logo {
+  margin: 10px 0px;
+  max-height: 30px;
+  float: left;
+}
+#urgent {
+  display: block;
+  background: white;
+  text-align: center;
 }
 section {
   background-size: cover;
@@ -51,23 +58,12 @@ h2 {
   text-transform: uppercase;
   font-size: 24px;
 }
-iframe {
-  margin: 0 auto;
-  display: block;
-}
 a {
   color: #000;
-}
-a:hover {
-  color: #E4E4E4;
 }
 #board {
   width: 300px;
   margin: 20px auto;
-}
-#logo {
-  max-height: 30px;
-  float: left;
 }
 .title-text {
   padding: 10px;
@@ -177,8 +173,8 @@ a:hover {
   #schedule-text {
     width: 70%;
   }
-  header {
-    display: block;
+  nav {
+    display: table;
   }
 }
 /* Bigger than 1000 */
@@ -186,7 +182,7 @@ a:hover {
   .intro {
     padding: 24rem 0rem;
   }
-  header {
-    display: block;
+  nav {
+    display: table;
   }
 }
