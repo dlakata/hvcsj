@@ -21,4 +21,4 @@ var cfg = {
 
 board = new ChessBoard('board', cfg);
 
-//window.setInterval(makeRandomMove, 500);
+window.setInterval(makeRandomMove, 500);
