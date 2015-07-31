@@ -78,8 +78,14 @@ a:hover {
   float: left;
 }
 
-#title-text {
-  color: #E4E4E4;
+.title-text {
+  padding: 10px;
+  background: rgba(200, 200, 200, .5);
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  a {
+    color: black;
+  }
 }
 
 #schedule-text {
@@ -99,9 +105,8 @@ a:hover {
   width: 300px;
 }
 
-#intro {
-  height: 100%;
-  background: url('../img/intro-bg.jpg') no-repeat center center; 
+.intro {
+  background: url('../img/intro-bg.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -150,6 +155,7 @@ a:hover {
   .current {
     font-weight: bold;
     text-decoration: underline;
+    font-size: 26px;
   }
 }
 
@@ -187,9 +193,8 @@ a:hover {
 
 /* Bigger than 750 */
 @media (min-width: @tablet-size) {
-  #title-text {
-    color: #E4E4E4;
-    width: 50%;
+  .title-text {
+    padding: 40px;
   }
   .tabs-nav {
     li {
@@ -197,7 +202,7 @@ a:hover {
       margin: 0px 15px;
     }
   }
-  #intro {
+  .intro {
     padding: 18rem 0rem;
   }
   #schedule-text {
@@ -210,7 +215,7 @@ a:hover {
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
-  #intro {
+  .intro {
     padding: 24rem 0rem;
   }
   header {
