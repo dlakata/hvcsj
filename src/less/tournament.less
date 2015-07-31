@@ -6,6 +6,7 @@ header > a {
   text-decoration: none;
   padding-left: 30px;
   margin-top: 10px;
+  display: none;
   color: white;
 }
 
@@ -82,6 +83,9 @@ h6 {
 
 /* Bigger than 750 */
 @media (min-width: @tablet-size) {
+  header > a {
+    display: inline-block;
+  }
   .intro {
     padding: 14rem 0rem;
   }
