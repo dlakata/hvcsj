@@ -137,7 +137,7 @@
                 <div class="six columns">
                     <ul>
                         <li><b>Pay</b> via PayPal below, OR</li>
-                        <li><b>Pay</b> via check, mailed to Robert Lakata's below address</li>
+                        <li><b>Pay</b> via check (payable to HVCSJ), mailed to Robert Lakata's below address</li>
                     </ul>
                 </div>
                 <div class="six columns">
@@ -152,39 +152,22 @@
                     </ul>
                 </div>
             </div>
-            <form id="tournament-paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <form id="tournament-paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="WM9GECAD4BB82">
                 <table>
-                    <tr>
-                        <td><input type="hidden" name="on0" value="Payment options">Payment options</td>
-                    </tr>
-                    <tr>
-                        <td><select name="os0">
-                            <option value="Entry fee">Entry fee $20.00 USD</option>
-                            <option value="Entry fee + 1 yr. scholastic membership (age 12 &amp; under) (+$17)">Entry
-                                fee + 1 yr. scholastic membership (age 12 &amp; under) (+$17) $37.00 USD
-                            </option>
-                            <option value="Entry fee + 1 yr. young adult membership (age 16+) (+$26)">Entry fee + 1 yr.
-                                young adult membership (age 16+) (+$26) $46.00 USD
-                            </option>
-                            <option value="Entry fee + 1 yr. youth membership (age 13-15) (+$22)">Entry fee + 1 yr.
-                                youth membership (age 13-15) (+$22) $42.00 USD
-                            </option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                        <td><input type="hidden" name="on1" value="Player's name:">Player's name:</td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="os1" maxlength="200"></td>
-                    </tr>
+                    <tr><td><input type="hidden" name="on0" value="Payment options">Payment options</td></tr>
+                    <tr><td><select name="os0">
+	                    <option value="Entry fee">Entry fee $25.00 USD</option>
+	                    <option value="Entry fee + 1 yr. scholastic membership (age 12 & under) (+$17)">Entry fee + 1 yr. scholastic membership (age 12 & under) (+$17) $42.00 USD</option>
+	                    <option value="Entry fee + 1 yr scholastic membership (age 13-15) (+$22)">Entry fee + 1 yr scholastic membership (age 13-15) (+$22) $47.00 USD</option>
+	                    <option value="Entry fee + 1 yr scholastic membership (age 16+) (+$26)">Entry fee + 1 yr scholastic membership (age 16+) (+$26) $51.00 USD</option>
+                    </select> </td></tr>
+                    <tr><td><input type="hidden" name="on1" value="Player's name:">Player's name:</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
                 </table>
                 <input type="hidden" name="currency_code" value="USD">
-                <input id="paypal-button" type="image"
-                       src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" name="submit"
-                       alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                <input id="paypal-button" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
             </form>
             <div id="address">
                 Robert Lakata<br>
